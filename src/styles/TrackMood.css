@@ -1,0 +1,78 @@
+.track-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .mood-buttons button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: 2px solid cyan;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    color: white;
+    width: 80px;
+  }
+  
+  .mood-buttons button .emoji {
+    font-size: 2rem;
+  }
+  
+  .mood-buttons button .mood-label {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .mood-buttons button.active {
+    background: cyan;
+    color: black;
+    transform: scale(1.1);
+  }
+  textarea {
+    width: 80%;
+    max-width: 400px;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid cyan;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: cyan;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button:hover {
+    background: #00ffee;
+  }
+  

@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px #0ff;
+  }
+  
+  .nav-item {
+    color: #0ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .nav-item:hover {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transform: scale(1.1);
+  }
+  

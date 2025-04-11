@@ -1,0 +1,91 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0a0a0a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Glow Effect for Title */
+.glow-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 15px cyan, 0 0 30px cyan, 0 0 45px cyan;
+  animation: pulseGlow 2s infinite alternate;
+  letter-spacing: 2px;
+}
+
+/* Subtitle */
+.sub-text {
+  font-size: 1.3rem;
+  margin: 15px 0;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+/* Cyberpunk-Style Button */
+.glow-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0a0a0a;
+  background: linear-gradient(135deg, cyan, #00ffee);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px cyan, 0 0 24px cyan;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Button Hover & Active Effects */
+.glow-button:hover {
+  background: linear-gradient(135deg, #00ffee, cyan);
+  box-shadow: 0 0 20px cyan, 0 0 35px cyan;
+  transform: scale(1.05);
+}
+
+.glow-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px cyan;
+}
+
+/* Navigation Button Styling */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.nav-button {
+  background: rgba(0, 255, 255, 0.2);
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid cyan;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+  background: rgba(0, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+@keyframes pulseGlow {
+  from {
+    text-shadow: 0 0 15px cyan, 0 0 30px cyan, 0 0 45px cyan;
+  }
+  to {
+    text-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan;
+  }
+}
